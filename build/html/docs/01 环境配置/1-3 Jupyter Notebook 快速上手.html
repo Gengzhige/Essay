@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1-3 Jupyter Notebook 快速上手 &mdash; 梗直哥随笔 v0.1 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="prev" title="1-2 CONDA 常用命令" href="1-2%20CONDA%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> 梗直哥随笔
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">01 环境配置</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1-1%20CUDA%2BAnaconda%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">1-1 CUDA+Anaconda 深度学习环境配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1-2%20CONDA%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">1-2 CONDA 常用命令</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1-3 Jupyter Notebook 快速上手</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter">Jupyter是什么</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Jupyter Notebook特点</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">教程结构</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1. Jupyter的安装与运行</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">1.1 图形化界面操作</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">1.2 命令行操作</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">梗直哥随笔</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">01 环境配置</a> &raquo;</li>
+        
+      <li>1-3 Jupyter Notebook 快速上手</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/docs/01 环境配置/1-3 Jupyter Notebook 快速上手.md.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="jupyter-notebook">
+<h1>1-3 Jupyter Notebook 快速上手<a class="headerlink" href="#jupyter-notebook" title="永久链接至标题">¶</a></h1>
+<div class="section" id="jupyter">
+<h2>Jupyter是什么<a class="headerlink" href="#jupyter" title="永久链接至标题">¶</a></h2>
+<p>Jupyter Notebook是一个开源的Web应用程序，允许开发者方便的创建和共享代码文档</p>
+<p>可以实时的编写代码块运行代码块，查看结果并可视化数据</p>
+</div>
+<div class="section" id="id1">
+<h2>Jupyter Notebook特点<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>支持markdown语法</p></li>
+<li><p>支持LaTeX公式</p></li>
+<li><p>允许把代码写入到独立的cell中，然后单独执行，无需从头开始执行代码</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>教程结构<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p><img alt="png" src="../../_images/1.png" /></p>
+</div>
+<div class="section" id="id3">
+<h2>1. Jupyter的安装与运行<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h3>1.1 图形化界面操作<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<div class="section" id="base">
+<h4>1.1.1 默认的base环境<a class="headerlink" href="#base" title="永久链接至标题">¶</a></h4>
+<p>安装了Anaconda后，在base环境就默认就安装了Jupyter Notebook</p>
+<p>打开Anaconda，在home界面直接点击launch运行</p>
+<p><img alt="png" src="../../_images/2.png" /></p>
+</div>
+<div class="section" id="id5">
+<h4>1.1.2 创建新的虚拟环境<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<p>打开Anaconda,在Environments界面，创建新的python虚拟环境</p>
+<p><img alt="png" src="../../_images/3.png" /></p>
+<p>然后回到home界面，点击install按钮安装Jupyter  Notebook</p>
+<p><img alt="png" src="../../_images/4.png" /></p>
+<p>安装完成后点击launch按钮运行</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>1.2 命令行操作<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id7">
+<h4>1.2.1 默认的base环境<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<p>打开Anaconda Prompt命令行： 因为base环境默认已经安装了Jupyter Notebook</p>
+<p><img alt="png" src="../../_images/5.png" /></p>
+<p>所有直接输入命令： jupyter notebook  运行</p>
+<p><img alt="png" src="../../_images/6.png" /></p>
+</div>
+<div class="section" id="id8">
+<h4>1.2.2 创建新的虚拟环境<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<p>打开Anaconda Prompt命令行：首先创建一个新的虚拟环境</p>
+<p>conda create -n Gengzhi python=3.7</p>
+<p>然后切换到Gengzhi环境：conda activate Gengzhi</p>
+<p>然后进行安装：  conda install jupyter notebook</p>
+<p>安装完成后输入命令运行：  jupyter notebook</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="1-2%20CONDA%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" class="btn btn-neutral float-left" title="1-2 CONDA 常用命令" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2022, 梗直哥.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
