@@ -13,7 +13,7 @@ Jupyter Notebook是一个开源的Web应用程序，允许开发者方便的创�
 
 ### 教程结构
 
-![png](../../notebook/1-3/assets/1.png)
+![](../../notebook/1-3/assets/1.png)
 
 ### 1. Jupyter的安装与运行
 
@@ -24,16 +24,16 @@ Jupyter Notebook是一个开源的Web应用程序，允许开发者方便的创�
 
 打开Anaconda，在home界面直接点击launch运行
 
-![png](../../notebook/1-3/assets/2.png)
+![](../../notebook/1-3/assets/2.png)
 
 ##### 1.1.2 创建新的虚拟环境
 打开Anaconda,在Environments界面，创建新的python虚拟环境
 
-![png](../../notebook/1-3/assets/3.png)
+![](../../notebook/1-3/assets/3.png)
 
 然后回到home界面，点击install按钮安装Jupyter  Notebook
 
-![png](../../notebook/1-3/assets/4.png)
+![](../../notebook/1-3/assets/4.png)
 
 安装完成后点击launch按钮运行
 
@@ -42,11 +42,11 @@ Jupyter Notebook是一个开源的Web应用程序，允许开发者方便的创�
 ##### 1.2.1 默认的base环境
 打开Anaconda Prompt命令行： 因为base环境默认已经安装了Jupyter Notebook
 
-![png](../../notebook/1-3/assets/5.png)
+![](../../notebook/1-3/assets/5.png)
 
 所有直接输入命令： jupyter notebook  运行
 
-![png](../../notebook/1-3/assets/6.png)
+![](../../notebook/1-3/assets/6.png)
 
 ##### 1.2.2 创建新的虚拟环境
 打开Anaconda Prompt命令行：首先创建一个新的虚拟环境
