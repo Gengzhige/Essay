@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>01 环境配置 &mdash; 梗直哥随笔 v0.1 文档</title>
+  <title>02 感知机 &mdash; 梗直哥随笔 v0.1 文档</title>
   
 
   
@@ -42,8 +42,8 @@
     
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="1-1 CUDA+Anaconda 深度学习环境配置" href="1-1%20CUDA%2BAnaconda%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html" />
-    <link rel="prev" title="0-3 机器学习的江湖" href="../00%20%E5%BC%95%E8%A8%80/0-3%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%B1%9F%E6%B9%96.html" /> 
+    <link rel="next" title="2-1 反向传播的深入理解" href="2-1%20%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.html" />
+    <link rel="prev" title="1-3 Jupyter Notebook 快速上手" href="../01%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1-3%20Jupyter%20Notebook%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,13 +90,11 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../00%20%E5%BC%95%E8%A8%80/index.html">00 引言</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">01 环境配置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-1%20CUDA%2BAnaconda%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">1-1 CUDA+Anaconda 深度学习环境配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-2%20CONDA%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">1-2 CONDA 常用命令</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-3%20Jupyter%20Notebook%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">1-3 Jupyter Notebook 快速上手</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html">01 环境配置</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">02 感知机</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2-1%20%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.html">2-1 反向传播的深入理解</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../02%20%E6%84%9F%E7%9F%A5%E6%9C%BA/index.html">02 感知机</a></li>
 </ul>
 
             
@@ -145,13 +143,13 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>01 环境配置</li>
+      <li>02 感知机</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/docs/01 环境配置/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+            <a href="../../_sources/docs/02 感知机/index.rst.txt" rel="nofollow"> 查看页面源码</a>
           
         
       </li>
@@ -165,12 +163,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>01 环境配置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>02 感知机<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="1-1%20CUDA%2BAnaconda%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">1-1 CUDA+Anaconda 深度学习环境配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-2%20CONDA%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">1-2 CONDA 常用命令</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-3%20Jupyter%20Notebook%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">1-3 Jupyter Notebook 快速上手</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-1%20%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.html">2-1 反向传播的深入理解</a></li>
 </ul>
 </div>
 </div>
@@ -181,8 +177,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="1-1%20CUDA%2BAnaconda%20%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html" class="btn btn-neutral float-right" title="1-1 CUDA+Anaconda 深度学习环境配置" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../00%20%E5%BC%95%E8%A8%80/0-3%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%B1%9F%E6%B9%96.html" class="btn btn-neutral float-left" title="0-3 机器学习的江湖" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="2-1%20%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.html" class="btn btn-neutral float-right" title="2-1 反向传播的深入理解" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../01%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1-3%20Jupyter%20Notebook%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html" class="btn btn-neutral float-left" title="1-3 Jupyter Notebook 快速上手" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
     </div>
 
   <hr/>
