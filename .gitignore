@@ -1,2 +1,7 @@
 .ipynb_checkpoints
 .virtual_documents
+
+build/
+
+**/2-1/data/
+

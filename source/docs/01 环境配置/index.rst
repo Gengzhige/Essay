@@ -4,6 +4,7 @@
 .. toctree::
     :maxdepth: 1
     
-    1-1 CUDA+Anaconda 深度学习环境配置
-    1-2 CONDA 常用命令
+    1-1 【CUDA Anaconda】机器学习环境搭建
+    1-2 conda的使用
     1-3 Jupyter Notebook 快速上手
+    1-4 matplotlib快速上手
