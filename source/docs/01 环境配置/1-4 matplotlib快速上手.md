@@ -132,7 +132,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 x = range(0, 60)
 y = [random.randint(10, 40) for i in range(60)]
@@ -155,7 +155,7 @@ matplotlib默认不支持中文字符
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 # 设置字体 matplotlib.rc
 import matplotlib
@@ -182,7 +182,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 # 设置字体
 import matplotlib
@@ -216,7 +216,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 import matplotlib
 font = {"family":"MicroSoft YaHei",
@@ -283,7 +283,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 x = range(0, 60)
 y = [random.randint(10, 40) for i in range(60)]
@@ -301,7 +301,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 x = range(0, 60)
 y = [random.randint(10, 40) for i in range(60)]
@@ -318,7 +318,7 @@ plt.show()
 
 
 ```python
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 import random
 plt.rcParams['font.sans-serif'] = ['SimHei'] 
 x = range(0, 60)
